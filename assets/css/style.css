@@ -199,6 +199,6 @@ form .buttons button,
 
 @media (max-width: 550px) {
   form .fields .input-field {
-    width: calc(100% / 1 - 15px);
+    width: calc(100% / 1 - 5px);
   }
 }
