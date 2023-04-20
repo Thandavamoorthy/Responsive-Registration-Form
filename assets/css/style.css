@@ -52,25 +52,25 @@ body {
   overflow: hidden;
 }
 
-.container form .form{
+.container form .form {
   position: absolute;
   background-color: #fff;
   transition: all 0.5s ease-in-out;
 }
 
-.container form .form.second{
+.container form .form.second {
   opacity: 0;
   pointer-events: none;
   transform: translateX(100%);
 }
 
-form.secActive .form.second{
+form.secActive .form.second {
   opacity: 1;
   pointer-events: auto;
   transform: translateX(0);
 }
 
-form.secActive .form.first{
+form.secActive .form.first {
   opacity: 0;
   pointer-events: none;
   transform: translateX(-100%);
@@ -117,19 +117,21 @@ form .fields .input-field {
   margin: 8px 0;
 }
 
-.input-field input:is(:focus, :valid){
+.input-field input:is(:focus, :valid) {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
 }
 
-.input-field input[type="date"]{
+.input-field input[type="date"] {
   color: #707070;
 }
 
-.input-field input[type="date"]:valid{
+.input-field input[type="date"]:valid {
   color: #333;
 }
 
-.container form button, .nextBtn, .backBtn{
+.container form button,
+.nextBtn,
+.backBtn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,47 +149,46 @@ form .fields .input-field {
 }
 
 .container form button,
-.container form .backBtn{
+.container form .backBtn {
   font-size: 16px;
   font-weight: 400;
 }
 
 form button:hover,
-form .backBtn:hover{
+form .backBtn:hover {
   background-color: #067d7d;
 }
 
 form button i,
-form .backBtn i{
+form .backBtn i {
   margin: 0px 10px;
   font-size: 1.5em;
 }
 
-form .backBtn i{
+form .backBtn i {
   margin-left: -10px;
 }
 
-form .backBtn i{
+form .backBtn i {
   transform: rotate(180deg);
 }
 
-form .buttons{
+form .buttons {
   display: flex;
   align-items: center;
 }
 
-form .buttons button, .backBtn{
+form .buttons button,
+.backBtn {
   margin-right: 14px;
 }
 
-
-
-@media (max-width: 750px){
-  .container form{
+@media (max-width: 750px) {
+  .container form {
     overflow-y: scroll;
   }
 
-  .container form::-webkit-scrollbar{
+  .container form::-webkit-scrollbar {
     display: none;
   }
 
@@ -196,8 +197,8 @@ form .buttons button, .backBtn{
   }
 }
 
-@media (max-width: 550px){
+@media (max-width: 550px) {
   form .fields .input-field {
-    width: 100%;
+    width: calc(100% / 1 - 15px);
   }
 }
